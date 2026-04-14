@@ -121,6 +121,47 @@ export const MSG = {
   CUSTOMER_NOT_VALID: "Customer not found or is not a valid customer party.",
   SALE_OUT_OF_STOCK: "One or more items have insufficient stock.",
 
+  // Expenses
+  EXPENSE_CATEGORY_CREATED: "Expense category created successfully.",
+  EXPENSE_CATEGORY_UPDATED: "Expense category updated successfully.",
+  EXPENSE_CATEGORY_FETCHED: "Expense category fetched successfully.",
+  EXPENSE_CATEGORIES_FETCHED: "Expense categories fetched successfully.",
+  EXPENSE_CATEGORY_DELETED: "Expense category deleted successfully.",
+  EXPENSE_CATEGORY_NOT_FOUND: "Expense category not found.",
+  EXPENSE_CATEGORY_NAME_EXISTS: "An expense category with this name already exists.",
+  EXPENSE_CATEGORY_IN_USE: "Cannot delete a category that has expenses.",
+  EXPENSE_CREATED: "Expense recorded successfully.",
+  EXPENSE_UPDATED: "Expense updated successfully.",
+  EXPENSE_FETCHED: "Expense fetched successfully.",
+  EXPENSE_DELETED: "Expense deleted successfully.",
+  EXPENSE_NOT_FOUND: "Expense not found.",
+
+  // Accounting
+  LEDGER_FETCHED: "Ledger entries fetched successfully.",
+  DAYBOOK_FETCHED: "Day book fetched successfully.",
+  PARTY_LEDGER_FETCHED: "Party ledger fetched successfully.",
+  PARTY_OUTSTANDING_FETCHED: "Outstanding report fetched successfully.",
+  TRIAL_BALANCE_FETCHED: "Trial balance fetched successfully.",
+  PROFIT_LOSS_FETCHED: "Profit & Loss report fetched successfully.",
+  BALANCE_SHEET_FETCHED: "Balance sheet fetched successfully.",
+  CASH_FLOW_FETCHED: "Cash flow report fetched successfully.",
+
+  // GST & Tax
+  GST_SUMMARY_FETCHED: "GST summary fetched successfully.",
+  HSN_SUMMARY_FETCHED: "HSN summary fetched successfully.",
+  GSTR1_FETCHED: "GSTR-1 data fetched successfully.",
+  GSTR3B_FETCHED: "GSTR-3B data fetched successfully.",
+
+  // Reports
+  REPORT_FETCHED: "Report fetched successfully.",
+
+  // Journal
+  JOURNAL_CREATED: "Journal entry posted successfully.",
+  JOURNAL_FETCHED: "Journal entries fetched successfully.",
+
+  // Dashboard
+  DASHBOARD_FETCHED: "Dashboard data fetched successfully.",
+
   // Generic
   VALIDATION_ERROR: "Validation error.",
   NOT_FOUND: "Resource not found.",

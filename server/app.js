@@ -10,6 +10,12 @@ import taxRateRoutes  from "./modules/taxRates/taxRate.routes.js";
 import productRoutes  from "./modules/products/product.routes.js";
 import purchaseRoutes from "./modules/purchases/purchase.routes.js";
 import saleRoutes     from "./modules/sales/sale.routes.js";
+import expenseRoutes from "./modules/expenses/expense.routes.js";
+import accountingRoutes from "./modules/accounting/accounting.routes.js";
+import gstRoutes from "./modules/gst/gst.routes.js";
+import reportRoutes from "./modules/reports/report.routes.js";
+import dashboardRoutes from "./modules/dashboard/dashboard.routes.js";
+import journalRoutes from "./modules/journal/journal.routes.js";
 
 
 import "./jobs/workers/email.worker.js";
@@ -27,14 +33,20 @@ app.use(
 );
 
 // ─── Routes ────────────────────────────────────────────────────────────────
-app.use("/api/auth",     authRoutes);
-app.use("/api/business", businessRoutes);
-app.use("/api/parties",  partyRoutes);
-app.use("/api/categories",categoryRoutes);
-app.use("/api/tax-rates", taxRateRoutes);
+app.use("/api/auth",       authRoutes);
+app.use("/api/business",   businessRoutes);
+app.use("/api/parties",    partyRoutes);
+app.use("/api/categories", categoryRoutes);
+app.use("/api/tax-rates",  taxRateRoutes);
 app.use("/api/products",   productRoutes);
 app.use("/api/purchases",  purchaseRoutes);
 app.use("/api/sales",      saleRoutes);
+app.use("/api/expenses",   expenseRoutes);
+app.use("/api/accounting", accountingRoutes);
+app.use("/api/gst",        gstRoutes);
+app.use("/api/reports",    reportRoutes);
+app.use("/api/dashboard",  dashboardRoutes);
+app.use("/api/journal",    journalRoutes);
 
 
 
