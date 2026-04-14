@@ -7,3 +7,4 @@ export * from "./products.schema.js";
 export * from "./purchases.schema.js";
 export * from "./payments.schema.js";
 export * from "./ledger.schema.js";
+export * from "./sales.schema.js";

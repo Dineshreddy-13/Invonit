@@ -106,6 +106,21 @@ export const MSG = {
   PAYMENT_RECORDED: "Payment recorded successfully.",
   SUPPLIER_NOT_VALID: "Supplier not found or is not a valid supplier party.",
 
+  // Sale
+  SALE_CREATED: "Sale recorded successfully.",
+  SALE_UPDATED: "Sale updated successfully.",
+  SALE_FETCHED: "Sale fetched successfully.",
+  SALES_FETCHED: "Sales fetched successfully.",
+  SALE_DELETED: "Sale cancelled successfully.",
+  SALE_NOT_FOUND: "Sale not found.",
+  SALE_FORBIDDEN: "You do not have access to this sale.",
+  SALE_RETURN_CREATED: "Sale return recorded successfully.",
+  SALE_CANNOT_RETURN: "Only confirmed or delivered sales can be returned.",
+  SALE_ALREADY_RETURNED: "This sale has already been fully returned.",
+  SALE_CANNOT_CANCEL: "Only draft or confirmed sales can be cancelled.",
+  CUSTOMER_NOT_VALID: "Customer not found or is not a valid customer party.",
+  SALE_OUT_OF_STOCK: "One or more items have insufficient stock.",
+
   // Generic
   VALIDATION_ERROR: "Validation error.",
   NOT_FOUND: "Resource not found.",
@@ -114,12 +129,12 @@ export const MSG = {
 };
 
 // ─── Business ─────────────────────────────────────────────────────────────
-export const BUSINESS_TYPES            = ["retail", "wholesale", "manufacturing", "service", "other"];
-export const CURRENCIES                = ["INR", "USD", "EUR", "GBP", "AED"];
-export const DEFAULT_INVOICE_PREFIX    = "INV";
+export const BUSINESS_TYPES              = ["retail", "wholesale", "manufacturing", "service", "other"];
+export const CURRENCIES                  = ["INR", "USD", "EUR", "GBP", "AED"];
+export const DEFAULT_INVOICE_PREFIX      = "INV";
 export const DEFAULT_FINANCIAL_YEAR_START = "04-01";
-export const DEFAULT_CURRENCY          = "INR";
-export const DEFAULT_COUNTRY           = "India";
+export const DEFAULT_CURRENCY            = "INR";
+export const DEFAULT_COUNTRY             = "India";
 
 // ─── Party ────────────────────────────────────────────────────────────────
 export const PARTY_TYPES   = ["customer", "supplier", "both"];
@@ -138,7 +153,11 @@ export const STOCK_ADJUSTMENT_REASONS   = [
 // ─── Purchase ─────────────────────────────────────────────────────────────
 export const PURCHASE_STATUSES = ["draft", "received", "partial", "returned", "cancelled"];
 export const PURCHASE_SOURCES  = ["manual", "ocr"];
-export const PAYMENT_MODES     = [
+
+// ─── Sale ─────────────────────────────────────────────────────────────────
+export const SALE_TYPES      = ["invoice", "estimate", "delivery_challan", "pos"];
+export const SALE_STATUSES   = ["draft", "confirmed", "delivered", "returned", "cancelled"];
+export const PAYMENT_MODES   = [
   "cash", "upi", "card", "bank_transfer", "cheque", "credit", "mixed",
 ];
 
